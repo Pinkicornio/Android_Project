@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LOlistcompra"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/ListFieldProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        >
+        <ImageView
+            android:id="@+id/IVproduct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            app:srcCompat="@drawable/grocery"
+            android:layout_alignParentLeft="true" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/IVproduct"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TVname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/alice"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TVmarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:text="Marca"
+                android:fontFamily="@font/alice"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/chkbxComprar"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:fontFamily="@font/alice"
+                android:text="Compra"
+                android:textSize="13sp"
+                android:paddingEnd="2sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TVprecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="2sp"
+            android:text="Precio"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/alice"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/TVFechaCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/alice"
+            android:textColor="@android:color/darker_gray"
+            android:text="FechaCompra"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/TVstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/alice"
+            android:layout_marginEnd="10dp"
+            android:text="Stock"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVstockMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35sp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/alice"
+            android:text="min"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

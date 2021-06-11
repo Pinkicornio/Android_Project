@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popupporile"
+    android:layout_width="350sp"
+    android:layout_height="500sp"
+    android:layout_marginTop="50sp"
+    android:layout_marginStart="28sp"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/IVProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/header_bckgrnd"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        app:srcCompat="@drawable/ic_account_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="170sp"
+        android:text="Name:"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/TVprofileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105sp"
+        android:layout_marginTop="170sp"
+        android:hint="Monlau"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="220sp"
+        android:text="Location:"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/TVprofilelocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135sp"
+        android:layout_marginTop="220sp"
+        android:hint="España"
+        android:textSize="26sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="270sp"
+        android:text="City:"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/TVprofilecity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="270sp"
+        android:hint="Barcelona"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="320sp"
+        android:text="Address:"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/TVprofileaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130sp"
+        android:layout_marginTop="320sp"
+        android:hint="Sagrera"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="370sp"/>
+</RelativeLayout>

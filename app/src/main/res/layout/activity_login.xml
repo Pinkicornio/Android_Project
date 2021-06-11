@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_background"
+        android:orientation="vertical"
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp">
+        <requestFocus/>
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60sp"
+            android:src="@drawable/logos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="40sp"
+            android:fontFamily="@font/alice"
+            android:text="User:"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/alice"
+            android:text="Password:"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:passwordToggleEnabled="true" />
+
+        <requestFocus />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp">
+
+            <Button
+                android:id="@+id/bttLogin"
+                android:layout_width="120sp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/white"
+                android:fontFamily="@font/alice"
+                android:onClick="LoginPage"
+                android:text="LOGIN"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bttRegister"
+                android:layout_width="120sp"
+                android:layout_height="45dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/white"
+                android:fontFamily="@font/alice"
+                android:onClick="registerPage"
+                android:text="REGISTER"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="respuesta"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aviso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="Usuario/Contraseña incorrectas"
+                android:textColor="#FF0008"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
